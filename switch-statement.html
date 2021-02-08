@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch Statement</title>
+</head>
+<body>
+<script>
+
+    const nilai = "E";
+
+    switch (nilai) {
+        case "A":
+            document.writeln("<p>Wow Anda Lulus Dengan Baik</p>");
+            break;
+        case "B":
+        case "C":
+            document.writeln("<p>Anda Lulus</p>");
+            break;
+        case "D":
+            document.writeln("<p>Anda Tidak Lulus</p>");
+            break;
+        default:
+            document.writeln("<p>Mungkin Anda Salah Jurusan</p>");
+    }
+
+    if (nilai === "A") {
+        document.writeln("<p>Wow Anda Lulus Dengan Baik</p>");
+    } else if (nilai === "B" || nilai === "C") {
+        document.writeln("<p>Anda Lulus</p>");
+    } else if (nilai === "D") {
+        document.writeln("<p>Anda Tidak Lulus</p>");
+    } else {
+        document.writeln("<p>Mungkin Anda Salah Jurusan</p>");
+    }
+
+</script>
+</body>
+</html>

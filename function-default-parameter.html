@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Default Parameter</title>
+</head>
+<body>
+<script>
+
+    function register(name, gender = "UNKNOWN") {
+        console.info(name);
+        console.info(gender);
+    }
+
+    register();
+    register("Eko");
+    register("Eko", "MALE");
+    register("Eko", undefined);
+    register("Eko", null);
+
+</script>
+</body>
+</html>

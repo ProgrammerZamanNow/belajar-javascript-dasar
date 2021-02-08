@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Logika di Non Boolean</title>
+</head>
+<body>
+<script>
+
+    console.info("Hello" || "");
+    console.info("" || []);
+    console.info("0" || "NOL");
+    console.info(0 || "NOL");
+    console.info(null || "NULL");
+    console.info(undefined || "UNDEFINED");
+    console.info(0 || false);
+
+    const person = {
+        firstName: "",
+        lastName: "Khannedy"
+    };
+
+    const name = person.firstName || person.lastName;
+    console.info(name);
+
+    console.info("HELLO" && '');
+    console.info("" && []);
+    console.info("0" && "NOL");
+
+</script>
+</body>
+</html>
